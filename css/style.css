@@ -1,0 +1,42 @@
+.thankyou{
+  color:red;
+}
+.track{
+  color:red;
+  float:left;
+  border: 2px solid white;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+  width: 100px;
+  margin: 2%;
+  border-radius: 50px;
+  background-color: white
+}
+.details{
+  color: red;
+  float:right;
+  border: 2px solid white;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+  width: 100px;
+  margin: 2%;
+  border-radius: 50px;
+  background-color: white;
+}
+h1{
+  text-align:center;
+  color: blue;
+  background-color: black;
+}
+body{
+  background-image:url(../image/triangle1.png);
+}
+.types{
+  text-align: center;
+  font-size: 100px
+  color:red;
+}
