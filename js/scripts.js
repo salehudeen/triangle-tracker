@@ -6,7 +6,7 @@ function track() {
   var p = [parseInt(length1)];
   var q = [parseInt(length2)];
   var r = [parseInt(length3)];
-  
+
   var ab = p.concat(q);
 
   var abc = ab.concat(r);
@@ -19,10 +19,10 @@ function track() {
   var b = sorted[1];
   var c = sorted[2];
 
-  var lengthab = a + b;
+  var addAandB= a + b;
 
-  if (lengthab < c) {
-    document.getElementById("result").innerHTML = "Hey there, not a triangle";
+  if (addAandB < c) {
+    document.getElementById("result").innerHTML = "Hey there, thats not a triangle!";
   } else if (a === b && b === c && a > 0 && b > 0 && c > 0) {
     document.getElementById("result").innerHTML = "Equilateral Triangle.";
   } else if (a === b && b !== c || a !== b && b === c && a > 0 && b > 0 && c > 0) {
