@@ -2,7 +2,7 @@
 #### {This is an application  that helps the user determine which type of triangle he is looking at just by inputing the lengths of each side}, {Date of the current version is 27/04/2019}
 #### By **{salehudeen-saleh}**
 ## Description
-{This application helps users around the world determine types of triangles by using the lengths of the triangle at hand. }
+{This application helps users around the world determine types of triangles by using the lengths of the triangle at hand.this is a link to the online repository  https://salehudeen.github.io/triangle-tracker/ }
 ## Requirments
 * A device
 * Connection to the internet
