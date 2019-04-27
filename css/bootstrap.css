@@ -4566,10 +4566,14 @@ input[type="button"].btn-block {
 .card > hr {
   margin-right: 0;
   margin-left: 0;
+  background-color: blue;
+  color: red;
 }
 
 .card > .list-group:first-child .list-group-item:first-child {
   border-top-left-radius: 0.25rem;
+  color: red;
+  background-color: blue;
   border-top-right-radius: 0.25rem;
 }
 

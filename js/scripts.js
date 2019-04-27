@@ -3,9 +3,9 @@ function track() {
   var length2 = document.getElementById("l2").value;
   var length3 = document.getElementById("l3").value;
 
-  var p = [parseFloat(length1)];
-  var q = [parseFloat(length2)];
-  var r = [parseFloat(length3)];
+  var p = [parseInt(length1)];
+  var q = [parseInt(length2)];
+  var r = [parseInt(length3)];
 
   var ab = p.concat(q);
 
@@ -30,6 +30,6 @@ function track() {
   } else if (a !== b && b !== c && (Number.isInteger(a) === true || Number.isInteger(b) === true || Number.isInteger(c) === true) && a > 0 && b > 0 && c > 0) {
     document.getElementById("result").innerHTML = "Scalene Triangle";;
   } else {
-    document.getElementById("result").innerHTML = "Invalid Measurements";
+    document.getElementById("result").innerHTML = "Wrong Measurements";
   };
 }
