@@ -11,12 +11,18 @@ function track() {
 
   var abc = ab.concat(r);
 
-  var lengthab = a + b;
-  var lengthca = a + c;
-  var lengthbc = b + c;
+  var sorted = abc.sort(function (d, e) {
+    return d - e;
+  });
 
-  if (lengthab < c || lengthca < b || lengthbc < a) {
-    document.getElementById("result").innerHTML = "hey there this isnt a triangle!";
+  var a = sorted[0];
+  var b = sorted[1];
+  var c = sorted[2];
+
+  var lengthab = a + b;
+
+  if (lengthab < c) {
+    document.getElementById("result").innerHTML = "Hey there, not a triangle";
   } else if (a === b && b === c && a > 0 && b > 0 && c > 0) {
     document.getElementById("result").innerHTML = "Equilateral Triangle.";
   } else if (a === b && b !== c || a !== b && b === c && a > 0 && b > 0 && c > 0) {
@@ -24,6 +30,6 @@ function track() {
   } else if (a !== b && b !== c && (Number.isInteger(a) === true || Number.isInteger(b) === true || Number.isInteger(c) === true) && a > 0 && b > 0 && c > 0) {
     document.getElementById("result").innerHTML = "Scalene Triangle";;
   } else {
-    document.getElementById("result").innerHTML = "wrong values";
+    document.getElementById("result").innerHTML = "Invalid Measurements";
   };
 }
