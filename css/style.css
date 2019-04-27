@@ -4,7 +4,7 @@
 .track{
   color:red;
   float:left;
-  border: 2px solid white;
+  border: 2px solid yellow;
   text-align: center;
   padding: 10px;
   color: white;
@@ -12,12 +12,12 @@
   width: 100px;
   margin: 2%;
   border-radius: 50px;
-  background-color: white
+  background-color: white;
 }
 .details{
   color: red;
   float:right;
-  border: 2px solid white;
+  border: 2px solid yellow;
   text-align: center;
   padding: 10px;
   color: white;
@@ -29,9 +29,9 @@
 }
 h1{
   text-align:center;
-  color: blue;
-  background-color: black;
+  color: yellow;
+  background-image: url(../image/triangle1.jpg);
 }
 body{
-  background-image:url(../image/triangle1.png);
+  background-image:url(../image/triangle2.jpg);
 }
