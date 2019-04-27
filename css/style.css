@@ -35,8 +35,7 @@ h1{
 body{
   background-image:url(../image/triangle1.png);
 }
-.types{
-  text-align: center;
-  font-size: 100px
-  color:red;
-}
+@media screen and (max-width:768px) {
+    .form {
+        top: 60%;
+        width: 80%;

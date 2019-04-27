@@ -1,19 +1,26 @@
-function triangle(l1,l2,l3){
-var l1=prompt("enter l1")
-var l2=prompt("enter l2")
-var l3=prompt("enter l3")
+function track(){
+var l1=document.getElementById("l1")
+var l2=document.getElementById("l2")
+var l3=document.getElementById("l3")
 
-if (l1+l2<=l3||l2+l3<=l1||l1+l3<=l2){
-alert("Sorry this is not a Triangle")
+var a=[parseFloat(l1)];
+var b= [parseFloat(l2)];
+var c= [parseFloat(l3)];
+
+if (a+b<= c||a+c<=b||b+c<=a) {
+    document.getElementById("result").innerHTML = "Hey There This isnt a triangle";
+  } else if (a === b & b === c & a > 0 & b > 0 & c > 0) {
+    document.getElementById("result").innerHTML = "Equilateral Triangle.";
+  } else if (a === b & b !== c || a !== b & b === c & a & a > 0 & b > 0 & c > 0) {
+    document.getElementById("result").innerHTML = "Isosceles Triangle";
+  } else if (a !== b & b !== c & a >  0 & b> 0 & c > 0) {
+    document.getElementById("result").innerHTML = "Scalene Triangle";;
+  } else {
+    document.getElementById("result").innerHTML = "Invalid Measurements";
+  };
 }
-if (l1===l2 & l2===l3){
-alert("equilateral triangle")
+
+function reset() {
+  document.getElementById("myform").reset();
+  document.getElementById("result").innerHTML = "Try other figures";
 }
-if (l1===l2 & l2!==l3 || l1!==l2 & l2==l3){
-alert("isoselice triangle")
-}
-if (l1!==l2 & l2!==l3){
-alert("scalene triangle")
-}
-}
-triangle();

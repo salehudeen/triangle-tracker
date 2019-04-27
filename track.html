@@ -2,12 +2,31 @@
 <html>
 <head>
     <title>Triangle Tracker</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href"css/style.css" rel="stylesheet" type="text/css">
     <script src="js/scripts.js"></script>
 </head>
 
 <body>
   <h1>TRIANGLE TRACKER</h1>
+  <div class="form">
+       <form  action="track">
+           <label for="length1">Length One</label>
+           <input type="number" id="l1" name="length-one" placeholder="First length...">
+           <br>
+           <label for="length2">Length Two</label>
+           <input type="number" id="l2" name="lenght-two" placeholder="Second length...">
+           <br>
+           <label for="length3">Length Three</label>
+           <input type="number" id="l3" name="lenght-three" placeholder="Third length...">
+
+           <p id="result"></p>
+       </form>
+
+  <input type="submit" value="Submit">
+</form>
+
+
+  <div class="body">
         <h2>Instructions</h2>
         <p>
             <ol>
@@ -15,5 +34,6 @@
                 <li>The program will take in your lengths and output the triangle that the sides will form.</li>
             </ol>
         </p>
+    </div>
   </body>
 </html>
